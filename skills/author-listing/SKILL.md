@@ -32,7 +32,7 @@ Every step after creation uses the listing's `hashid`.
 5. **Photos.** `attach_listing_photo` takes one public `https` image URL per call. The server fetches the image and runs content moderation on it. A photo whose `moderation_status` is `rejected` or `escalated` stays hidden and blocks publishing until it is removed with `delete_attachment` or replaced. For a local file, `sign_attachment_upload` returns a presigned URL to `PUT` the bytes to, then `confirm_attachment_upload` finalizes it. This path only works where you can make HTTP requests yourself, such as a coding agent with shell access.
 6. **Review with the user.** Call `get_listing`, summarize what will go public, and get explicit approval before publishing.
 7. **`publish_listing`** starts an asynchronous pipeline that enriches the listing and then makes it public. If the listing isn't ready, the tool returns a checklist of what is missing; resolve those items and try again.
-8. **`get_publish_status`** with the `hashid` reports progress. Poll it until `state` is `completed` or `failed`. On `failed`, report the reason it gives. Once published, the listing is live at `https://spacexploration.com/listing/{hashid}/{address_slug}`.
+8. **`get_publish_status`** with the `hashid` reports progress. Poll it until `state` is `completed` or `failed`. On `failed`, report the reason it gives. Once published, `get_listing` returns the listing's public `url`; give it to the user.
 
 ## Manage existing listings
 

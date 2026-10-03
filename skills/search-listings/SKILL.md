@@ -46,12 +46,13 @@ SPACEXPLORATION is a free MLS for commercial property. Every read tool works wit
 
 `search_listings` returns `hits`, `facets` (counts per value, useful for suggesting refinements), `found`, `page`, and `last_page`. Pass `page` to page through results; there are 24 hits per page.
 
-Each hit carries a `hashid`. Call `get_listing` with it for the full record: pricing, every populated attribute with its label and unit, parcel and public-record data, photos, and documents. Broker contact details appear only when the caller is allowed to see them.
+Each hit carries a `hashid`, the listing page `url`, and two timestamps: `listed_at` (when it went live) and `updated_at` (when it last changed). Call `get_listing` with the `hashid` for the full record: pricing, every populated attribute with its label and unit, parcel and public-record data, photos, and documents. Broker contact details appear only when the caller is allowed to see them.
 
-Link the user to a listing at `https://spacexploration.com/listing/{hashid}/{address_slug}`, using the hit's `address_slug`.
+Link the user to a listing with its `url`. Don't build the link yourself.
 
 ## Report honestly
 
 - Say how many listings matched (`found`), and when a search came back empty, say which filter was most restrictive.
+- When recency matters, say when a listing was listed or last updated.
 - Present only values the tools returned. A missing attribute means the listing doesn't state it. Don't fill it in.
 - Some attributes are computed from public sources: flood zone, census demographics, walk and transit scores, proximity, market medians, and `attr_record_*` assessor data. When those matter to the decision, say they come from public data, not from the broker.
