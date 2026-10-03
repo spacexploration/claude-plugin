@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "spacexploration": {
+      "type": "http",
+      "url": "https://spacexploration.com/mcp"
+    }
+  }
+}

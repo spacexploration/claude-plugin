@@ -1,0 +1,19 @@
+{
+  "name": "spacexploration",
+  "displayName": "SPACEXPLORATION",
+  "version": "1.0.0",
+  "description": "Search, track, and publish commercial real estate listings on SPACEXPLORATION, the free MLS for commercial property.",
+  "author": {
+    "name": "SPACEXPLORATION",
+    "url": "https://spacexploration.com"
+  },
+  "homepage": "https://spacexploration.com/docs/ai",
+  "repository": "https://github.com/spacexploration/claude-plugin",
+  "license": "MIT",
+  "keywords": ["commercial-real-estate", "cre", "listings", "mls", "property-search", "brokerage"],
+  "icon": "./assets/logo.png",
+  "documentationUrl": "https://spacexploration.com/docs/ai",
+  "supportUrl": "https://spacexploration.com/docs/ai",
+  "privacyPolicyUrl": "https://spacexploration.com/privacy",
+  "termsOfServiceUrl": "https://spacexploration.com/terms"
+}
