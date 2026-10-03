@@ -1,0 +1,21 @@
+skills/author-listing/SKILL.md
+  s_ea8b30a70d3d34::t_5777d592aa1ad0 35
+skills/search-listings/SKILL.md
+  s_ea8b30a70d3d34::t_fc1944bcc8c13a 49,51,56
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "0ad6a88303247aacb52965d8be12ca635b61b5c6",
+  "prompts": {},
+  "sessions": {
+    "s_ea8b30a70d3d34": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "37e3869d-d13a-47b1-b21c-cdbc94275da8",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Bogdan Kharchenko <scriptor@gmail.com>"
+    }
+  }
+}
