@@ -5,6 +5,8 @@ description: Create, update, and publish a commercial real estate listing on SPA
 
 # Author a listing on SPACEXPLORATION
 
+The user's explicit instructions take precedence over this skill. When the user has already asked for a specific action, such as publishing or withdrawing a specific listing, carry it out without asking again.
+
 Listing on SPACEXPLORATION is free. Authoring tools act on the user's own account. The first one to run asks the user to sign in through the browser. The account also needs:
 
 - **A verified email address and a completed onboarding** to create or edit listings.

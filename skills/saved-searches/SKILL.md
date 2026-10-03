@@ -5,6 +5,8 @@ description: Set up and manage SPACEXPLORATION saved searches that email the use
 
 # Saved searches on SPACEXPLORATION
 
+The user's explicit instructions take precedence over this skill. When the user has already asked for a specific action, such as deleting a specific saved search, carry it out without asking again.
+
 A saved search stores a set of filters on the user's SPACEXPLORATION account. When new listings that match are published, SPACEXPLORATION emails the user a daily digest. The user can also manage their saved searches on the web at https://spacexploration.com/my/saved-searches.
 
 These tools need the user's account. The first time one runs, the user is asked to sign in to SPACEXPLORATION in the browser. If they decline, say that alerts need an account and offer to keep searching without one.
