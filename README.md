@@ -18,6 +18,7 @@
 | `skills/search-listings` | Finding, filtering, and reading listings |
 | `skills/saved-searches` | Creating and managing email alerts |
 | `skills/author-listing` | Creating, editing, and publishing listings |
+| `plugin.json`, `mcp.json` | The same plugin in the Agent Plugins format, for ChatGPT and Codex |
 
 ## Accounts and sign-in
 
