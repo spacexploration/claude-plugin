@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "spacexploration",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Search, track, and publish commercial real estate listings on SPACEXPLORATION, the MLS for commercial property.",
   "author": {
     "name": "SPACEXPLORATION",
@@ -45,7 +45,7 @@
               "description": "Search listings from a plain-language request without signing in",
               "prompt": "Find office buildings for sale in Colorado under $800K.",
               "tools_triggered": "interpret_search, search_listings",
-              "expected_behavior": "Lists the matching Colorado office listings for sale under $800,000 with price, address, size, and a link to each listing on spacexploration.com. No sign-in is requested."
+              "expected_behavior": "Lists the matching Colorado office listings for sale under $800,000 with price, address, size, and a link to each listing on spacexploration.com. If SPACEXPLORATION is not yet connected, ChatGPT first offers to connect it; after sign-in the search runs without further prompts."
             },
             {
               "description": "Open the full details of one listing",
