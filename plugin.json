@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "spacexploration",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Search, track, and publish commercial real estate listings on SPACEXPLORATION, the MLS for commercial property.",
   "author": {
     "name": "SPACEXPLORATION",
@@ -91,7 +91,7 @@
         "commerce_description": "This plugin does not sell products or process payments. It searches commercial real estate listings and manages the signed-in user's own listings and saved searches."
       },
       "publication": {
-        "release_notes": "Initial release: listing search, listing details, saved-search email alerts, and listing authoring and publishing. Description no longer mentions pricing."
+        "release_notes": "Initial release: listing search, listing details, saved-search email alerts, and listing authoring and publishing."
       }
     }
   }
