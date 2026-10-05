@@ -16,16 +16,17 @@ SPACEXPLORATION is a free MLS for commercial property. Every read tool works wit
 
 ## Build filters from the registry
 
-`get_registry` returns `attributes` and `sort_options`. Each attribute's `field` is the only valid filter key. Shape each value by the attribute's `ui_control`:
+`get_registry` returns `attributes` and `sort_options`. Each attribute's `field` is the only valid filter key. Shape each value by the attribute's `filter`:
 
-| `ui_control` | Filter value |
+| `filter` | Filter value |
 | --- | --- |
-| `range`, `daterange` | `{"min": …, "max": …}`. Either bound is optional |
-| `multiselect`, `select` | array of `enum_values[].value`, e.g. `["industrial", "office"]` |
-| `toggle` | `true` or `false` |
+| `range` | `{"min": …, "max": …}`. Either bound is optional. Dates take ISO dates, e.g. `{"min": "2027-01-01"}` |
+| `any_of` | array of the attribute's `values`, e.g. `["industrial", "office"]`. Where `values` are `{value, label}` pairs, send the `value` |
+| `boolean` | `true` or `false` |
+| `equals` | a single exact value |
 
 - `applies_to` and `applies_to_listing_type` say which property and listing types a field is meaningful for. For example, cap rate applies to sale listings and lease structure to lease listings. Filtering on a field that doesn't apply silently excludes every other type.
-- `city` and `county` are text multiselects. Use them as exact-name filters when the user names a place and you have no `bounds`.
+- Location: `state` takes two-letter codes (`["CO"]`), and `city` and `county` take exact names. Use them when the user names a place and you have no `bounds`; without a location filter or `bounds` the search covers the whole country.
 - `sort` must be one of `sort_options`, e.g. `price:asc`, `attr_cap_rate:desc`, or `views_30d:desc` for popular listings.
 - `query` is free text matched against address, city, and keywords. Use it for a street address or a term that isn't a registry field.
 
