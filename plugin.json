@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "spacexploration",
-  "version": "1.0.0",
-  "description": "Search, track, and publish commercial real estate listings on SPACEXPLORATION, the free MLS for commercial property.",
+  "version": "1.0.1",
+  "description": "Search, track, and publish commercial real estate listings on SPACEXPLORATION, the MLS for commercial property.",
   "author": {
     "name": "SPACEXPLORATION",
     "url": "https://spacexploration.com"
@@ -16,7 +16,7 @@
       "interface": {
         "displayName": "SPACEXPLORATION",
         "shortDescription": "Commercial real estate search",
-        "longDescription": "SPACEXPLORATION is a free MLS for commercial real estate: industrial, office, retail, multifamily, and land, for sale or lease across the US. This plugin gives you direct access to live listings and the tools brokers use to market them.\n\nSearch without an account. Describe what you're looking for in plain language, such as \"warehouses near Denver under $5M with dock doors\", and it becomes precise filters. Filter on dozens of attributes, from price, size, cap rate, and NOI to clear height, zoning, building class, and lease terms. Then open any listing for photos, pricing, property details, and public-record data. Context such as FEMA flood zones, census demographics, walk scores, and county assessor records comes from authoritative public sources and is labeled as such.\n\nSign in to do more:\n- Saved searches: save any search and get an email digest when new matching listings are published.\n- Listing authoring: brokers and owners can turn a flyer or offering memorandum into a draft listing, geocode the address, set pricing and property details, attach photos, publish, and track the publish to completion.\n- Portfolio management: review your listings and withdraw ones that are no longer available.\n\nReading and searching listings needs no account. Saved searches and authoring use standard OAuth sign-in on spacexploration.com. Creating listings requires a verified email address, and publishing requires a verified phone number. The plugin doesn't buy, sell, or transact property; it finds listings and manages your own.",
+        "longDescription": "SPACEXPLORATION is an MLS for commercial real estate: industrial, office, retail, multifamily, and land, for sale or lease across the US. This plugin gives you direct access to live listings and the tools brokers use to market them.\n\nSearch without an account. Describe what you're looking for in plain language, such as \"warehouses near Denver with dock doors\", and it becomes precise filters. Filter on dozens of attributes, from price, size, cap rate, and NOI to clear height, zoning, building class, and lease terms. Then open any listing for photos, pricing, property details, and public-record data. Context such as FEMA flood zones, census demographics, walk scores, and county assessor records comes from authoritative public sources and is labeled as such.\n\nSign in to do more:\n- Saved searches: save any search and get an email digest when new matching listings are published.\n- Listing authoring: brokers and owners can turn a flyer or offering memorandum into a draft listing, geocode the address, set pricing and property details, attach photos, publish, and track the publish to completion.\n- Portfolio management: review your listings and withdraw ones that are no longer available.\n\nReading and searching listings needs no account. Saved searches and authoring use standard OAuth sign-in on spacexploration.com. Creating listings requires a verified email address, and publishing requires a verified phone number. The plugin doesn't buy, sell, or transact property; it finds listings and manages your own.",
         "developerName": "SPACEXPLORATION",
         "category": "Business & Operations",
         "capabilities": [
@@ -91,7 +91,7 @@
         "commerce_description": "This plugin does not sell products or process payments. It searches commercial real estate listings and manages the signed-in user's own listings and saved searches."
       },
       "publication": {
-        "release_notes": "Initial release: listing search, listing details, saved-search email alerts, and listing authoring and publishing."
+        "release_notes": "Initial release: listing search, listing details, saved-search email alerts, and listing authoring and publishing. Description no longer mentions pricing."
       }
     }
   }
