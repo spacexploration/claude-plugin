@@ -1,0 +1,19 @@
+plugin.json
+  s_2284a416e92ba6::t_8887878c963a55 4-5,19,94
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c6ff43534ed41f387966f4b24a6ee02aa6db6ec4",
+  "prompts": {},
+  "sessions": {
+    "s_2284a416e92ba6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "08c89277-4e6d-4fd6-8708-76dfeb0d43b5",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Bogdan Kharchenko <scriptor@gmail.com>"
+    }
+  }
+}
