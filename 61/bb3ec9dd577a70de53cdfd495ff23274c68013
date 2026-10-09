@@ -1,0 +1,24 @@
+README.md
+  s_976a4ef088605e::t_77e09ac8139d2b 28
+  s_976a4ef088605e::t_cdb4bde2f6f556 36
+  s_976a4ef088605e::t_1d7c0813f93c74 5
+  s_976a4ef088605e::t_c05be35f9f9e34 1
+  s_976a4ef088605e::t_0cee925154e753 15-16,22-24
+  s_976a4ef088605e::t_8e34b9464b52db 44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "61bb3ec9dd577a70de53cdfd495ff23274c68013",
+  "prompts": {},
+  "sessions": {
+    "s_976a4ef088605e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c0bbc34-c64f-4bed-84cd-2c5d27bbe221",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Bogdan Kharchenko <scriptor@gmail.com>"
+    }
+  }
+}
