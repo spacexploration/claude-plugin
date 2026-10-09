@@ -1,0 +1,22 @@
+README.md
+  s_124f8309b5b8f9::t_4e5be707fdfe55 42
+  s_124f8309b5b8f9::t_a557c21acc14d0 22
+.cursor-plugin/plugin.json
+  s_124f8309b5b8f9::t_3cba78f0af8e50 1-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1c75d636326a901faa1e5aebe0f5620dd0148fde",
+  "prompts": {},
+  "sessions": {
+    "s_124f8309b5b8f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f708e3ef-ff48-4ffc-8a22-c7cf74b828dd",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Bogdan Kharchenko <scriptor@gmail.com>"
+    }
+  }
+}
