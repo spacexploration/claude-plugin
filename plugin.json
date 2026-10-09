@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "spacexploration",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Search, track, and publish commercial real estate listings on SPACEXPLORATION, the MLS for commercial property.",
   "author": {
     "name": "SPACEXPLORATION",
@@ -32,7 +32,7 @@
         "defaultPrompt": [
           "Find office buildings for sale in Colorado under $800K.",
           "Show industrial listings with dock doors and a cap rate above 7%.",
-          "Email me when new retail listings under $2M are posted in Weld County, Colorado."
+          "Save a SPACEXPLORATION search that emails me new retail listings under $2M in Weld County, Colorado."
         ],
         "brandColor": "#6A7D5C",
         "composerIcon": "./assets/logo.png",
@@ -49,15 +49,15 @@
             },
             {
               "description": "Open the full details of one listing",
-              "prompt": "Show me the details of the industrial building for sale in Higginsville, Missouri.",
+              "prompt": "Open the SPACEXPLORATION listing for the industrial building for sale in Higginsville, Missouri, and show me its details.",
               "tools_triggered": "search_listings, get_listing",
               "expected_behavior": "Finds the Higginsville industrial listing and summarizes its price, building size, cap rate, lot size, and public-record data, with a link to the listing page. Values the listing doesn't state are not invented."
             },
             {
               "description": "Create a saved search that sends email alerts",
-              "prompt": "Email me when new industrial listings under $2M are posted in Weld County, Colorado.",
+              "prompt": "Save a SPACEXPLORATION search that emails me when new industrial listings under $2M are posted in Weld County, Colorado.",
               "tools_triggered": "list_my_saved_searches, save_search",
-              "expected_behavior": "Prompts the user to sign in to SPACEXPLORATION if the account isn't linked, then saves a search filtered to industrial listings under $2,000,000 in Weld County and confirms that matching new listings will be emailed."
+              "expected_behavior": "Prompts the user to sign in to SPACEXPLORATION if the account isn't linked, then saves a search on SPACEXPLORATION filtered to industrial listings under $2,000,000 in Weld County and confirms that matching new listings will be emailed."
             },
             {
               "description": "Draft a listing from property details",
