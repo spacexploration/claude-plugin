@@ -19,6 +19,7 @@
 | `skills/saved-searches` | Creating and managing email alerts |
 | `skills/author-listing` | Creating, editing, and publishing listings |
 | `plugin.json`, `mcp.json` | The same plugin in the Agent Plugins format, for ChatGPT and Codex |
+| `.cursor-plugin/plugin.json` | The same plugin for Grok Bot and Cursor, using `.mcp.json` and the skills above |
 
 ## Accounts and sign-in
 
@@ -38,6 +39,7 @@ You can connect the server directly instead:
 
 - **claude.ai or Claude Desktop:** Settings → Connectors → Add custom connector, then enter `https://spacexploration.com/mcp`.
 - **Claude Code:** `claude mcp add --transport http spacexploration https://spacexploration.com/mcp`
+- **Grok Bot or Cursor:** add a custom MCP server with the URL `https://spacexploration.com/mcp` and no headers.
 
 Full tool reference: https://spacexploration.com/docs/ai
 
