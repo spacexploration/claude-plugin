@@ -87,6 +87,7 @@
             }
           ]
         },
+        "demo_recording_url": "https://www.youtube.com/watch?v=xu4O9gmnQJc",
         "commerce": false,
         "commerce_description": "This plugin does not sell products or process payments. It searches commercial real estate listings and manages the signed-in user's own listings and saved searches."
       },
