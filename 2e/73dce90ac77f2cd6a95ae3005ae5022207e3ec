@@ -1,0 +1,25 @@
+.claude-plugin/plugin.json
+  s_3d794e8b982b8c::t_67e9432087ecb9 4
+.cursor-plugin/plugin.json
+  s_3d794e8b982b8c::t_b94fb6f4e9782c 4
+plugin.json
+  s_3d794e8b982b8c::t_00c3b713496e54 4,73-78
+skills/search-listings/SKILL.md
+  s_3d794e8b982b8c::t_898cec0d51df42 3,10,54-61,67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2e73dce90ac77f2cd6a95ae3005ae5022207e3ec",
+  "prompts": {},
+  "sessions": {
+    "s_3d794e8b982b8c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8e81bc99-2d59-4e76-ac91-edcffd6fd369",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Bogdan Kharchenko <scriptor@gmail.com>"
+    }
+  }
+}
