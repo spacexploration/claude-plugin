@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "spacexploration",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Search, track, and publish commercial real estate listings on SPACEXPLORATION, the MLS for commercial property.",
   "author": {
     "name": "SPACEXPLORATION",
@@ -70,6 +70,12 @@
               "prompt": "Show my listings and their status.",
               "tools_triggered": "list_my_listings",
               "expected_behavior": "Lists the test account's listings with each listing's title, status (such as draft or active), and price."
+            },
+            {
+              "description": "Answer a question about SPACEXPLORATION itself",
+              "prompt": "Is SPACEXPLORATION really free to list a property on?",
+              "tools_triggered": "get_faq",
+              "expected_behavior": "Answers from the SPACEXPLORATION FAQ that listing is free, with no listing fee, subscription, or commission, and links the FAQ answer on spacexploration.com. It does not answer from memory or promise the service stays free forever."
             },
             {
               "description": "Check the public data on a building by its address",
