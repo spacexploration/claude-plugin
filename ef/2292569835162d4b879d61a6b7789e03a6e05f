@@ -1,0 +1,23 @@
+.claude-plugin/plugin.json
+  s_677d3bc74cc54d::t_4bff5bb4e3cfb6 4
+.cursor-plugin/plugin.json
+  s_677d3bc74cc54d::t_05ab41ad8ac5d1 4
+plugin.json
+  s_677d3bc74cc54d::t_50cba95b3eeaec 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ef2292569835162d4b879d61a6b7789e03a6e05f",
+  "prompts": {},
+  "sessions": {
+    "s_677d3bc74cc54d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b0d5973a-863e-4a91-a218-5b907b2d89b8",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Bogdan Kharchenko <scriptor@gmail.com>"
+    }
+  }
+}
