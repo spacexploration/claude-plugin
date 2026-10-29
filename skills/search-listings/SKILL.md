@@ -61,7 +61,7 @@ A building looked up for the first time fills in over a minute or more. While `s
 
 ## Answer questions about SPACEXPLORATION
 
-When the user asks about SPACEXPLORATION itself rather than a property ("is it really free?", "do I need an account to search?", "where does the flood data come from?"), call `get_faq`. It works without signing in; pass `topic` to read one group. Answer from what it returns, in its own terms, and link the entry's `url`, or its `see` page when it has no `url`. If the FAQ doesn't cover the question, say so instead of guessing, and offer to send it to the team with `send_feedback`.
+When the user asks about SPACEXPLORATION itself rather than a property ("is it really free?", "do I need an account to search?", "where does the flood data come from?"), call `get_faq`. It works without signing in; pass `topic` to read one group. Answer from what it returns, in its own terms, and link the entry's `url`, or its `see` page when it has no `url`. If the FAQ doesn't cover the question, say so instead of guessing.
 
 ## Report honestly
 
