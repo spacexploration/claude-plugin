@@ -1,0 +1,20 @@
+plugin.json
+  s_1f242ffb8a68ee::t_7ae3029d684fa0 76,78
+  s_1f242ffb8a68ee::t_d760b233d3bddf 107
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b6001fd78c70fc4dfdabddb8c54fe8a52815e86d",
+  "prompts": {},
+  "sessions": {
+    "s_1f242ffb8a68ee": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9f48cae1-2ccf-46db-886e-2333ff10068f",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Bogdan Kharchenko <scriptor@gmail.com>"
+    }
+  }
+}
