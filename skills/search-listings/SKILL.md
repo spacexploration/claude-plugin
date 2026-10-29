@@ -51,6 +51,10 @@ Each hit carries a `hashid`, the listing page `url`, and two timestamps: `listed
 
 Link the user to a listing with its `url`. Don't build the link yourself.
 
+## Answer questions about SPACEXPLORATION
+
+When the user asks about SPACEXPLORATION itself rather than a property ("is it really free?", "do I need an account to search?", "where does the flood data come from?"), call `get_faq`. It works without signing in; pass `topic` to read one group. Answer from what it returns, in its own terms, and link the entry's `url`, or its `see` page when it has no `url`. If the FAQ doesn't cover the question, say so instead of guessing.
+
 ## Report honestly
 
 - Say how many listings matched (`found`), and when a search came back empty, say which filter was most restrictive.
