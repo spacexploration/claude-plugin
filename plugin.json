@@ -49,12 +49,6 @@
               "expected_behavior": "Lists the matching Colorado office listings for sale under $800,000 with price, address, size, and a link to each listing on spacexploration.com. If SPACEXPLORATION is not yet connected, ChatGPT first offers to connect it; after sign-in the search runs without further prompts."
             },
             {
-              "description": "Open the full details of one listing",
-              "prompt": "Open the SPACEXPLORATION listing for the industrial building for sale in Higginsville, Missouri, and show me its details.",
-              "tools_triggered": "search_listings, get_listing",
-              "expected_behavior": "Finds the Higginsville industrial listing and summarizes its price, building size, cap rate, lot size, and public-record data, with a link to the listing page. Values the listing doesn't state are not invented."
-            },
-            {
               "description": "Create a saved search that sends email alerts",
               "prompt": "Save a SPACEXPLORATION search that emails me when new industrial listings under $2M are posted in Weld County, Colorado.",
               "tools_triggered": "list_my_saved_searches, save_search",
@@ -65,12 +59,6 @@
               "prompt": "Create a draft listing for a 12,000 sq ft industrial building for sale at $1.5M at 1500 Wazee St, Denver, CO 80202.",
               "tools_triggered": "geocode_address, create_listing, update_listing, set_listing_attributes",
               "expected_behavior": "Geocodes the address, creates a private draft listing for sale at $1,500,000 with a 12,000 sq ft building size, and returns its identifier. Nothing is published, and fields the prompt doesn't state are left empty."
-            },
-            {
-              "description": "Review the signed-in user's own listings",
-              "prompt": "Show my listings and their status.",
-              "tools_triggered": "list_my_listings",
-              "expected_behavior": "Lists the test account's listings with each listing's title, status (such as draft or active), and price."
             },
             {
               "description": "Answer a question about SPACEXPLORATION itself",
