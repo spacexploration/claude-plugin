@@ -1,13 +1,13 @@
 ---
 name: search-listings
-description: Find and compare commercial real estate on SPACEXPLORATION — industrial, office, retail, multifamily, and land, for sale or lease, anywhere in the US. Use when the user wants to search for commercial property, filter by price, size, cap rate, location, or building features, look up a specific listing, compare listings side by side, or check the public data on any US building by its address (flood zone, hazard risk, EPA records, demographics, county record), listed or not. Searching needs no account; building lookups need sign-in.
+description: Find and compare commercial real estate on SPACEXPLORATION — industrial, office, retail, multifamily, and land, for sale or lease, anywhere in the US. Use when the user wants to search for commercial property, filter by price, size, cap rate, location, or building features, look up a specific listing, compare listings side by side, or check the public data on any US building by its address (flood zone, hazard risk, EPA records, demographics, county record), listed or not. Searching needs no account; a building lookup asks the user to sign in to SPACEXPLORATION in the browser.
 ---
 
 # Search SPACEXPLORATION listings
 
 The user's explicit instructions take precedence over this skill.
 
-SPACEXPLORATION is a free MLS for commercial property. Every read tool works without signing in, except looking up a building by address, which needs the user's account.
+SPACEXPLORATION is a free MLS for commercial property. Every read tool works without signing in, except looking up a building by address: the first time it runs, the user is asked to sign in to SPACEXPLORATION in the browser.
 
 ## Choose a starting point
 
@@ -53,7 +53,7 @@ Link the user to a listing with its `url`. Don't build the link yourself.
 
 ## Look up a building by address
 
-When the user asks about a specific building, on the market or not ("is 910 Elysian Fields Ave in a flood zone?", "what do we know about this property?"), call `look_up_parcel` with its full street address, street number included. It needs the user to be signed in. A road, a town, or a partial address is refused, so ask for the street number.
+When the user asks about a specific building, on the market or not ("is 910 Elysian Fields Ave in a flood zone?", "what do we know about this property?"), call `look_up_parcel` with its full street address, street number included. The first time it runs, the user is asked to sign in to SPACEXPLORATION in the browser. A road, a town, or a partial address is refused, so ask for the street number.
 
 It returns the building page `url` to share, `details` keyed by registry path (FEMA flood zone, natural hazard risk, EPA records nearby, Census demographics, access and amenities), `public_record` (the county's owner, values, taxes, tax lots, and recorded sales, each figure with a numbered source) where research has found it, and any live `listings` in it (pass a `hashid` to `get_listing`).
 
