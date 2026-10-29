@@ -7,7 +7,7 @@
     "name": "SPACEXPLORATION",
     "url": "https://spacexploration.com"
   },
-  "homepage": "https://spacexploration.com/docs/ai",
+  "homepage": "https://spacexploration.com",
   "repository": "https://github.com/spacexploration/claude-plugin",
   "license": "MIT",
   "keywords": ["commercial-real-estate", "cre", "listings", "mls", "property-search", "brokerage"],
@@ -27,7 +27,7 @@
           "Create and publish listings"
         ],
         "websiteURL": "https://spacexploration.com",
-        "supportURL": "https://spacexploration.com/docs/ai",
+        "supportURL": "https://spacexploration.com/faq",
         "privacyPolicyURL": "https://spacexploration.com/privacy",
         "termsOfServiceURL": "https://spacexploration.com/terms",
         "defaultPrompt": [
