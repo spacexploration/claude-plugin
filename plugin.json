@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "spacexploration",
-  "version": "1.0.4",
+  "version": "1.2.7",
   "description": "Search, track, and publish commercial real estate listings on SPACEXPLORATION, the MLS for commercial property.",
   "author": {
     "name": "SPACEXPLORATION",
@@ -16,12 +16,13 @@
       "interface": {
         "displayName": "SPACEXPLORATION",
         "shortDescription": "Commercial real estate search",
-        "longDescription": "SPACEXPLORATION is an MLS for commercial real estate: industrial, office, retail, multifamily, and land, for sale or lease across the US. This plugin gives you direct access to live listings and the tools brokers use to market them.\n\nSearch without an account. Describe what you're looking for in plain language, such as \"warehouses near Denver with dock doors\", and it becomes precise filters. Filter on dozens of attributes, from price, size, cap rate, and NOI to clear height, zoning, building class, and lease terms. Then open any listing for photos, pricing, property details, and public-record data. Context such as FEMA flood zones, census demographics, walk scores, and county assessor records comes from authoritative public sources and is labeled as such.\n\nSign in to do more:\n- Saved searches: save any search and get an email digest when new matching listings are published.\n- Listing authoring: brokers and owners can turn a flyer or offering memorandum into a draft listing, geocode the address, set pricing and property details, attach photos, publish, and track the publish to completion.\n- Portfolio management: review your listings and withdraw ones that are no longer available.\n\nReading and searching listings needs no account. Saved searches and authoring use standard OAuth sign-in on spacexploration.com. Creating listings requires a verified email address, and publishing requires a verified phone number. The plugin doesn't buy, sell, or transact property; it finds listings and manages your own.",
+        "longDescription": "SPACEXPLORATION is an MLS for commercial real estate: industrial, office, retail, multifamily, and land, for sale or lease across the US. This plugin gives you direct access to live listings and the tools brokers use to market them.\n\nSearch without an account. Describe what you're looking for in plain language, such as \"warehouses near Denver with dock doors\", and it becomes precise filters. Filter on dozens of attributes, from price, size, cap rate, and NOI to clear height, zoning, building class, and lease terms. Then open any listing for photos, pricing, property details, and public-record data. Context such as FEMA flood zones, census demographics, walk scores, and county assessor records comes from authoritative public sources and is labeled as such. Questions about SPACEXPLORATION itself, such as whether you need an account, are answered from its FAQ.\n\nSign in to do more:\n- Building lookup: look up any US building by its street address, listed or not, for its FEMA flood zone, natural hazard risk, nearby EPA records, and area demographics.\n- Saved searches: save any search and get an email digest when new matching listings are published.\n- Listing authoring: brokers and owners can turn a flyer or offering memorandum into a draft listing, geocode the address, set pricing and property details, attach photos, publish, and track the publish to completion.\n- Portfolio management: review your listings and withdraw ones that are no longer available.\n\nReading and searching listings needs no account. Building lookup, saved searches, and authoring use standard OAuth sign-in on spacexploration.com. Creating listings requires a verified email address, and publishing requires a verified phone number. The plugin doesn't buy, sell, or transact property; it finds listings and manages your own.",
         "developerName": "SPACEXPLORATION",
         "category": "Business & Operations",
         "capabilities": [
           "Search commercial listings",
           "Read listing details",
+          "Look up building data by address",
           "Save searches with email alerts",
           "Create and publish listings"
         ],
@@ -70,6 +71,18 @@
               "prompt": "Show my listings and their status.",
               "tools_triggered": "list_my_listings",
               "expected_behavior": "Lists the test account's listings with each listing's title, status (such as draft or active), and price."
+            },
+            {
+              "description": "Answer a question about SPACEXPLORATION itself",
+              "prompt": "Do I need an account to search for property on SPACEXPLORATION?",
+              "tools_triggered": "get_faq",
+              "expected_behavior": "Answers from the SPACEXPLORATION FAQ that no account is needed to search, open a listing, or contact the broker or owner, and that signing in adds saved searches with email alerts. It links the FAQ answer on spacexploration.com and does not answer from memory."
+            },
+            {
+              "description": "Check the public data on a building by its address",
+              "prompt": "Is 1500 Wazee St, Denver, CO 80202 in a flood zone, and what else does SPACEXPLORATION know about the building?",
+              "tools_triggered": "look_up_parcel, get_parcel",
+              "expected_behavior": "Prompts the user to sign in to SPACEXPLORATION if the account isn't linked, then reports the building's FEMA flood zone, natural hazard risk, nearby EPA records, and area demographics, with the county record and its sources where available and a link to the building page. If the data is still arriving it checks back with get_parcel instead of repeating the lookup, and it does not invent values the tools didn't return."
             }
           ],
           "negative": [
@@ -92,7 +105,7 @@
         "commerce_description": "This plugin does not sell products or process payments. It searches commercial real estate listings and manages the signed-in user's own listings and saved searches."
       },
       "publication": {
-        "release_notes": "Initial release: listing search, listing details, saved-search email alerts, and listing authoring and publishing."
+        "release_notes": "Look up any US building by its street address: FEMA flood zone, natural hazard risk, nearby EPA records, and area demographics, plus the county record once the building is listed (requires sign-in). Ask about SPACEXPLORATION itself and get answers from its FAQ. Lease listings are now priced suite by suite. After you publish, you get suggestions that improve the listing, such as when the cover photo is a flyer, the address is a placeholder, or the cap rate looks unusual."
       }
     }
   }
