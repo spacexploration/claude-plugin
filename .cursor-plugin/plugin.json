@@ -2,7 +2,7 @@
   "name": "spacexploration",
   "displayName": "SPACEXPLORATION",
   "version": "1.2.9",
-  "description": "Search, track, and publish commercial real estate listings on SPACEXPLORATION, the MLS for commercial property.",
+  "description": "Search, track, and publish commercial real estate listings on SPACEXPLORATION, the commercial real estate listing site.",
   "minClientVersions": {
     "cursor": "3.13.0",
     "grokbot": "0.49.0",

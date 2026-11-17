@@ -7,7 +7,7 @@ description: Find and compare commercial real estate on SPACEXPLORATION — indu
 
 The user's explicit instructions take precedence over this skill.
 
-SPACEXPLORATION is a free MLS for commercial property. Every read tool works without signing in, except looking up a building by address: the first time it runs, the user is asked to sign in to SPACEXPLORATION in the browser.
+SPACEXPLORATION is a free commercial real estate listing site. Every read tool works without signing in, except looking up a building by address: the first time it runs, the user is asked to sign in to SPACEXPLORATION in the browser.
 
 ## Choose a starting point
 

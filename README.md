@@ -2,7 +2,7 @@
 
 ![SPACEXPLORATION](assets/logo.png)
 
-[SPACEXPLORATION](https://spacexploration.com) is a free MLS for commercial property: industrial, office, retail, multifamily, and land, for sale or lease, across the US. This plugin connects Claude, ChatGPT, Codex, Grok Bot, and Cursor to SPACEXPLORATION's remote MCP server and adds skills that teach them to use it well.
+[SPACEXPLORATION](https://spacexploration.com) is a free commercial real estate listing site: industrial, office, retail, multifamily, and land, for sale or lease, across the US. This plugin connects Claude, ChatGPT, Codex, Grok Bot, and Cursor to SPACEXPLORATION's remote MCP server and adds skills that teach them to use it well.
 
 ## What you can do
 
